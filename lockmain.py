@@ -51,7 +51,9 @@ def on_press(key: Key):
     for w in minecraft_titles:
         if w.lower() in win_title.lower():
             is_mc = True
-    if not is_mc:
+    if is_mc:
+        change_ime(english_ime_id)
+    else:
         change_ime(your_ime_id)
         return
     if (key == KeyCode.from_char("t") or key == KeyCode.from_char("/")) and lock == True:
@@ -64,7 +66,7 @@ def on_press(key: Key):
     elif key == KeyCode.from_char("e") and lock == False and lt_from_t == False:
         change_ime(english_ime_id)
         lock = True
-    elif key == Key.esc:
+    elif key == Key.esc or key == Key.enter:
         change_ime(english_ime_id)
         lock = True
         lt_from_t = False
