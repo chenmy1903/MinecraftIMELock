@@ -52,7 +52,7 @@ def on_press(key: Key):
             is_mc = True
     if not is_mc:
         return
-    if key == KeyCode.from_char("t") and lock == True:
+    if (key == KeyCode.from_char("t") or key == KeyCode.from_char("/")) and lock == True:
         change_ime(your_ime_id)
         lock = False
         lt_from_t = True
