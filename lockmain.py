@@ -52,7 +52,8 @@ def on_press(key: Key):
         if w.lower() in win_title.lower():
             is_mc = True
     if is_mc:
-        change_ime(english_ime_id)
+        if not lt_from_t:
+            change_ime(english_ime_id)
     else:
         change_ime(your_ime_id)
         return
