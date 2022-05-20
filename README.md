@@ -13,6 +13,7 @@
 3. LunarClient
 4. Feather
 5. LiquidBounce
+6. 垃圾网易版
 
 ## 使用方法
 

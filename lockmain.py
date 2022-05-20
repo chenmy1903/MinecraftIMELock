@@ -23,6 +23,7 @@ minecraft_titles = [
     "BadLion",
     "LiquidBounce",
     "Feather",
+    "我的世界"
 ] # 关于Minecraft的标题名称(将你的游戏标题添加进来,只需要写一部分就可以了,带有版本号的不要写版本号)
 
 
