@@ -52,6 +52,7 @@ def on_press(key: Key):
         if w.lower() in win_title.lower():
             is_mc = True
     if not is_mc:
+        change_ime(your_ime_id)
         return
     if (key == KeyCode.from_char("t") or key == KeyCode.from_char("/")) and lock == True:
         change_ime(your_ime_id)
