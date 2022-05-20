@@ -4,6 +4,8 @@
 
 ## 更新内容
 
+> 基岩版自带输入法修复,不需要使用本工具
+
 1. 修复输入指令不会切换的bug
 2. 增加对网易版的支持
 3. 修复切换窗口触发输入法的bug
@@ -51,7 +53,7 @@ python -m PyInstaller -w -F lockmain.py
 3. LunarClient
 4. Feather
 5. LiquidBounce
-6. 垃圾网易版
+6. 垃圾网易版(Java版)
 
 ## 使用方法
 
